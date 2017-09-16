@@ -1,0 +1,90 @@
+body,html{
+  
+  width: 100%;
+  height: 100%;
+}
+#app{
+    width: 100%;
+    height: 100%;
+    font-size: .12rem;  
+}
+.mark{
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.warp {
+  width: 90%;
+  height: 2.9rem;
+  background: #fff; 
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+    
+}
+.title{
+    height:30px;
+    background: #F0F0F0;
+    text-align: center;
+    line-height: 30px;
+}
+.btns{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: .6rem;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    display: flex;
+    justify-content: space-around
+}
+.btns button{
+    height: .32rem;
+    width: .8rem;
+    border: none;
+    border-radius: 20px;
+    margin-top: .15rem;
+}
+.btns button:first-child{
+    background: #fff;
+    border: 1px solid #E74A41;
+}
+.btns button:nth-child(2){
+    background: linear-gradient(to right, #F3AF5A, #E96159);
+    color: #fff;
+}
+.connter{
+    width:100%;
+    height: 2.1rem;
+}
+.connter ul {
+  margin-top: .1rem;
+  display: flex;
+  padding: .1rem .1rem;
+  -webkit-flex-wrap: wrap;
+}
+.connter ul li {
+  width:33%;
+  margin-bottom: .1rem;
+  color: #333333;
+}
+.connter ul li span{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+.connter ul li.active{
+    color: orange;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in below version 2.1.8 */ {
+  opacity: 0
+}
